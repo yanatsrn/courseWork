@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.course.coursework.controller.UserMenuController">
+   <children>
+      <ImageView fitHeight="406.0" fitWidth="606.0" opacity="0.59" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../photos/whiteCar.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="180.0" layoutY="14.0" text="Меню пользователя" textFill="#592020">
+         <font>
+            <Font name="Century" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="166.0" fitWidth="274.0" layoutX="300.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../photos/people.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="showCarsButton" layoutX="60.0" layoutY="155.0" mnemonicParsing="false" onAction="#onShowCarsButtonClick" style="-fx-background-color: faa76c;" text="Просмотр каталога" />
+      <Button fx:id="searchCarsButton" layoutX="60.0" layoutY="75.0" mnemonicParsing="false" onAction="#searchModelById" style="-fx-background-color: faa76c;" text="Поиск автомобиля" />
+      <Button fx:id="goBackButton" layoutX="271.0" layoutY="334.0" mnemonicParsing="false" onAction="#onGoBackButtonClick" text="Вернуться" />
+      <TextField fx:id="searchId" layoutX="60.0" layoutY="115.0" promptText="id" />
+      <Button fx:id="showProfileButton" layoutX="60.0" layoutY="195.0" mnemonicParsing="false" onAction="#onShowProfileButtonClick" style="-fx-background-color: faa76c;" text="Посмотреть свой профиль" />
+   </children>
+</Pane>

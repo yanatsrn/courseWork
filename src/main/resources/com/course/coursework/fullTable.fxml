@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.course.coursework.controller.FullTableController">
+   <ImageView fitHeight="421.0" fitWidth="629.0" layoutX="-18.0" layoutY="-8.0" opacity="0.28" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@../../../photos/whiteCar.jpg" />
+      </image>
+   </ImageView>
+   <Label layoutX="310.0" layoutY="70.0" text="Коробка передач">
+      <font>
+         <Font name="Century" size="14.0" />
+      </font></Label>
+   <Button fx:id="goBackButton" layoutX="274.0" layoutY="362.0" mnemonicParsing="false" onAction="#onGoBackButtonClick" style="-fx-background-color: faa76c;" text="Вернуться" />
+   <Label layoutX="25.0" layoutY="70.0" text="Компания">
+      <font>
+         <Font name="Century" size="14.0" />
+      </font></Label>
+   <Label layoutX="25.0" layoutY="110.0" text="Страна">
+      <font>
+         <Font name="Century" size="14.0" />
+      </font></Label>
+   <Label layoutX="25.0" layoutY="150.0" text="Название">
+      <font>
+         <Font name="Century" size="14.0" />
+      </font></Label>
+   <Label layoutX="25.0" layoutY="190.0" text="Год">
+      <font>
+         <Font name="Century" size="14.0" />
+      </font></Label>
+   <Label layoutX="25.0" layoutY="230.0" text="Пробег">
+      <font>
+         <Font name="Century" size="14.0" />
+      </font></Label>
+   <Label layoutX="25.0" layoutY="270.0" text="Топливо">
+      <font>
+         <Font name="Century" size="14.0" />
+      </font></Label>
+   <Label layoutX="25.0" layoutY="310.0" text="Расход топлива">
+      <font>
+         <Font name="Century" size="14.0" />
+      </font></Label>
+   <Label layoutX="310.0" layoutY="110.0" text="Цена">
+      <font>
+         <Font name="Century" size="14.0" />
+      </font></Label>
+   <Label layoutX="310.0" layoutY="190.0" text="Тип кузова">
+      <font>
+         <Font name="Century" size="14.0" />
+      </font></Label>
+   <Label layoutX="310.0" layoutY="230.0" text="Салон">
+      <font>
+         <Font name="Century" size="14.0" />
+      </font></Label>
+   <Label layoutX="310.0" layoutY="270.0" text="Цвет">
+      <font>
+         <Font name="Century" size="14.0" />
+      </font></Label>
+   <Label layoutX="310.0" layoutY="310.0" text="Парктроник">
+      <font>
+         <Font name="Century" size="14.0" />
+      </font></Label>
+   <TextField fx:id="company" editable="false" layoutX="138.0" layoutY="66.0" />
+   <TextField fx:id="country" editable="false" layoutX="138.0" layoutY="106.0" />
+   <TextField fx:id="name" editable="false" layoutX="138.0" layoutY="146.0" />
+   <TextField fx:id="year" editable="false" layoutX="138.0" layoutY="187.0" />
+   <TextField fx:id="distance" editable="false" layoutX="138.0" layoutY="226.0" />
+   <TextField fx:id="fuel" editable="false" layoutX="138.0" layoutY="266.0" />
+   <TextField fx:id="fuelConsumption" editable="false" layoutX="138.0" layoutY="307.0" />
+   <TextField fx:id="transmission" editable="false" layoutX="444.0" layoutY="66.0" />
+   <TextField fx:id="price" editable="false" layoutX="444.0" layoutY="106.0" />
+   <TextField fx:id="isBought" editable="false" layoutX="444.0" layoutY="147.0" />
+   <TextField fx:id="body" editable="false" layoutX="444.0" layoutY="188.0" />
+   <TextField fx:id="salon" editable="false" layoutX="444.0" layoutY="227.0" />
+   <TextField fx:id="color" editable="false" layoutX="444.0" layoutY="267.0" />
+   <TextField fx:id="parking" editable="false" layoutX="444.0" layoutY="307.0" />
+   <Label layoutX="310.0" layoutY="150.0" text="Куплена">
+      <font>
+         <Font name="Century" size="14.0" />
+      </font>
+   </Label>
+   <Label layoutX="156.0" layoutY="14.0" text="Полная запись о модели">
+      <font>
+         <Font name="Century" size="26.0" />
+      </font>
+      <textFill>
+         <RadialGradient centerX="0.544280442804428" centerY="0.5" radius="0.5">
+            <stops>
+               <Stop>
+                  <color>
+                     <Color red="0.7894737124443054" green="0.47575536370277405" blue="0.036549706012010574" />
+                  </color>
+               </Stop>
+               <Stop offset="1.0">
+                  <color>
+                     <Color red="0.07894736528396606" green="0.06385233998298645" blue="0.035818714648485184" />
+                  </color>
+               </Stop>
+            </stops>
+         </RadialGradient>
+      </textFill>
+   </Label>
+</AnchorPane>

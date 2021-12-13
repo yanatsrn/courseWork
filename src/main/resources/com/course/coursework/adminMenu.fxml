@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.course.coursework.controller.AdminMenuController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.33" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../photos/purpleCar.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="163.0" layoutY="14.0" text="Меню администратора">
+         <font>
+            <Font name="Century" size="25.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.577490774907749" centerY="0.42113562262020654" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.38910818099975586" green="0.0833333358168602" blue="0.4736842215061188" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.3070175349712372" green="0.10423435270786285" blue="0.2630811929702759" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="addModelButton" layoutX="60.0" layoutY="70.0" mnemonicParsing="false" onAction="#onAddModelButtonClick" style="-fx-background-color: cb7ede;" text="Добавить запись модели" />
+      <Button fx:id="showCarsButton" layoutX="60.0" layoutY="140.0" mnemonicParsing="false" onAction="#onShowCarsButtonClick" style="-fx-background-color: cb7ede;" text="Работа с записями моделей" />
+      <ImageView fitHeight="169.0" fitWidth="269.0" layoutX="298.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../photos/consult.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="showUsersButton" layoutX="60.0" layoutY="210.0" mnemonicParsing="false" onAction="#onShowUsersButtonClick" style="-fx-background-color: cb7ede;" text="Просмотр журнала клиентов" />
+      <Button fx:id="goBackButton" layoutX="262.0" layoutY="293.0" mnemonicParsing="false" onAction="#onGoBackButtonClick" text="Вернуться" />
+   </children>
+</Pane>

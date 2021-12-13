@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.course.coursework.controller.AddModelController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../photos/purpleCar.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="30.0" layoutY="80.0" text="Название">
+         <font>
+            <Font name="Century" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="130.0" text="Год">
+         <font>
+            <Font name="Century" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="180.0" text="Пробег">
+         <font>
+            <Font name="Century" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="230.0" text="Топливо">
+         <font>
+            <Font name="Century" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="280.0" prefHeight="45.0" prefWidth="75.0" text="Расход топлива" wrapText="true">
+         <font>
+            <Font name="Century" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="295.0" layoutY="80.0" text="Коробка передач">
+         <font>
+            <Font name="Century" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="295.0" layoutY="130.0" text="Цена">
+         <font>
+            <Font name="Century" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="120.0" layoutY="80.0" promptText="*" />
+      <TextField fx:id="year" layoutX="120.0" layoutY="130.0" promptText="*" />
+      <TextField fx:id="distance" layoutX="120.0" layoutY="180.0" />
+      <TextField fx:id="fuel" layoutX="120.0" layoutY="230.0" promptText="*" />
+      <TextField fx:id="fuelConsumption" layoutX="120.0" layoutY="290.0" promptText="*" />
+      <TextField fx:id="transmission" layoutX="435.0" layoutY="80.0" />
+      <TextField fx:id="price" layoutX="435.0" layoutY="130.0" promptText="*" />
+      <Label layoutX="180.0" layoutY="14.0" text="Добавление модели">
+         <font>
+            <Font name="Century" size="25.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5701106870306374" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5952647924423218" green="0.28538551926612854" blue="0.7280701994895935" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.07017543911933899" green="0.008013862185180187" blue="0.008013862185180187" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="goBackButton" layoutX="439.0" layoutY="351.0" mnemonicParsing="false" onAction="#onGoBackButtonClick" text="Вернуться" />
+      <Button fx:id="addButton" layoutX="152.0" layoutY="350.0" mnemonicParsing="false" onAction="#onAddButtonClick" text="Добавить" />
+      <ComboBox fx:id="car" layoutX="435.0" layoutY="180.0" prefWidth="150.0" />
+      <ComboBox fx:id="type" layoutX="435.0" layoutY="230.0" prefWidth="150.0" />
+      <Label layoutX="295.0" layoutY="180.0" text="Производитель">
+         <font>
+            <Font name="Century" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="295.0" layoutY="230.0" text="Кузов и салон">
+         <font>
+            <Font name="Century" size="16.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="295.0" layoutY="281.0" opacity="0.8" prefHeight="20.0" prefWidth="284.0" text="* обязательные поля" />
+   </children>
+</AnchorPane>

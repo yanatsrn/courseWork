@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.course.coursework.controller.UserTableController">
+   <children>
+      <ImageView fitHeight="420.0" fitWidth="721.0" layoutX="-121.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../photos/people.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="modelsTableView" layoutY="62.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn id="idColumn" fx:id="idColumn" prefWidth="54.0" text="ID" />
+          <TableColumn id="modelNameColumn" fx:id="modelNameColumn" prefWidth="103.33331298828125" text="Название" />
+            <TableColumn id="yearColumn" fx:id="yearColumn" prefWidth="40.666656494140625" text="Год" />
+            <TableColumn id="distanceColumn" fx:id="distanceColumn" prefWidth="68.66668701171875" text="Пробег, км" />
+            <TableColumn id="fuelColumn" fx:id="fuelColumn" prefWidth="74.0" text="Топливо" />
+            <TableColumn id="fuelConsumptionColumn" fx:id="fuelConsumptionColumn" prefWidth="67.333251953125" text="Расход, л" />
+            <TableColumn id="transmissionColumn" fx:id="transmissionColumn" prefWidth="107.33331298828125" text="Коробка передач" />
+            <TableColumn fx:id="priceColumn" prefWidth="89.3333740234375" text="Цена, $" />
+        </columns>
+      </TableView>
+      <Button fx:id="getFullRecordButton" layoutX="14.0" layoutY="294.0" mnemonicParsing="false" onAction="#onGetFullRecordButtonClick" prefHeight="25.0" prefWidth="203.0" text="Просмотреть модель подробнее" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="goBackButton" layoutX="357.0" layoutY="336.0" mnemonicParsing="false" onAction="#onGoBackButtonClick" prefHeight="25.0" prefWidth="78.0" text="Вернуться" />
+      <Button fx:id="excelButton" layoutX="420.0" layoutY="294.0" mnemonicParsing="false" onAction="#onExcelButtonClick" prefHeight="25.0" prefWidth="126.0" text="Сохранить в Excel" />
+      <Button fx:id="pieButton" layoutX="240.0" layoutY="294.0" mnemonicParsing="false" onAction="#onPieButtonClick" prefHeight="25.0" prefWidth="137.0" text="Круговая диагрмма" textAlignment="CENTER" wrapText="true" />
+      <Button fx:id="graficButton" layoutX="159.0" layoutY="336.0" mnemonicParsing="false" onAction="#onGraficButtonClick" text="График" />
+   </children>
+</Pane>

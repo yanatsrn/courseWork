@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.course.coursework.controller.SignUpController">
+   <children>
+      <ImageView blendMode="DARKEN" fitHeight="400.0" fitWidth="607.0" opacity="0.56" pickOnBounds="true">
+         <image>
+            <Image url="@../../../photos/mountains.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="143.0" layoutY="14.0" text="Регистрация пользователя">
+         <font>
+            <Font name="Century" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="surname" layoutX="89.0" layoutY="70.0" prefHeight="25.0" prefWidth="159.0" promptText="Фамилия" />
+      <TextField fx:id="name" layoutX="89.0" layoutY="110.0" prefHeight="25.0" prefWidth="159.0" promptText="Имя" />
+      <TextField fx:id="age" layoutX="89.0" layoutY="150.0" prefHeight="25.0" prefWidth="159.0" promptText="Возраст" />
+      <TextField fx:id="phone" layoutX="89.0" layoutY="190.0" prefHeight="25.0" prefWidth="159.0" promptText="Телефон+375(29)(33)(44)..." />
+      <TextField fx:id="mail" layoutX="89.0" layoutY="230.0" prefHeight="25.0" prefWidth="159.0" promptText="Почта" />
+      <TextField fx:id="login" layoutX="304.0" layoutY="70.0" prefHeight="25.0" prefWidth="159.0" promptText="Логин" />
+      <TextField fx:id="password" layoutX="304.0" layoutY="110.0" prefHeight="25.0" prefWidth="159.0" promptText="Пароль" />
+      <Button layoutX="106.0" layoutY="331.0" mnemonicParsing="false" onAction="#onRegisterButtonClick" text="Зарегистрировать" />
+      <Button fx:id="goBackButton" layoutX="365.0" layoutY="331.0" mnemonicParsing="false" onAction="#onGoBackButtonClick" text="Вернуться" />
+      <Label fx:id="success" layoutX="170.0" layoutY="349.0">
+         <font>
+            <Font name="Century" size="17.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="303.0" layoutY="150.0" opacity="0.8" prefHeight="105.0" prefWidth="159.0" text="Пароль не менее 8 символов. Он должен включать хотя бы одну букву в верхнем и нижнем регистре, хотя бы одну цифру,  хотя бы один специальный символ (&quot;@&quot;, &quot;#&quot;. &quot;$&quot;, &quot;%&quot;, &quot;^&quot;, &quot;&amp;&quot;)" wrapText="true">
+         <font>
+            <Font size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+      </TextArea>
+   </children>
+</Pane>

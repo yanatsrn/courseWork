@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.course.coursework.controller.UserListController">
+   <children>
+      <ImageView fitHeight="489.0" fitWidth="713.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../photos/people.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="37.0" layoutY="85.0" prefHeight="200.0" prefWidth="640.0">
+        <columns>
+          <TableColumn fx:id="userId" prefWidth="47.99999809265137" text="Id" />
+          <TableColumn fx:id="surname" prefWidth="102.66669464111328" text="Фамилия" />
+            <TableColumn fx:id="name" prefWidth="75.0" text="Имя" />
+            <TableColumn fx:id="age" prefWidth="62.66673278808594" text="Возраст" />
+            <TableColumn fx:id="phone" prefWidth="90.6666259765625" text="Телефон" />
+            <TableColumn fx:id="mail" prefWidth="80.66668701171875" text="Почта" />
+            <TableColumn fx:id="login" prefWidth="69.33334350585938" text="Логин" />
+            <TableColumn fx:id="discountSum" prefWidth="106.0" text="Дисконтная сумма" />
+        </columns>
+      </TableView>
+      <Button fx:id="goBackButton" layoutX="556.0" layoutY="334.0" mnemonicParsing="false" onAction="#onGoBackButtonClick" text="Вернуться" />
+      <Button fx:id="exelButton" layoutX="118.0" layoutY="334.0" mnemonicParsing="false" onAction="#onExcelButtonClick" text="Сохранить в Excel" />
+   </children>
+</AnchorPane>

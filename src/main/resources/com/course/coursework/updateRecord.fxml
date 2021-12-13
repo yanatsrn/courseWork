@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.course.coursework.controller.UpdateRecordController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.37" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../photos/whiteCar.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="updateFuelConsumption" layoutX="421.0" layoutY="83.0" promptText="расход" />
+      <TextField fx:id="updateYear" layoutX="112.0" layoutY="135.0" promptText="год" />
+      <TextField fx:id="updatePrice" layoutX="416.0" layoutY="187.0" promptText="цена" />
+      <TextField fx:id="updateName" layoutX="112.0" layoutY="83.0" promptText="название" />
+      <TextField fx:id="updateDistance" layoutX="112.0" layoutY="187.0" promptText="пробег" />
+      <TextField fx:id="updateFuel" layoutX="112.0" layoutY="236.0" promptText="топливо" />
+      <Button fx:id="goBackButton" layoutX="404.0" layoutY="310.0" mnemonicParsing="false" onAction="#onGoBackButtonClick" style="-fx-background-color: faa76c;" text="Вернуться" />
+      <ComboBox fx:id="updateTransmission" layoutX="421.0" layoutY="135.0" prefWidth="150.0" />
+      <Label layoutX="28.0" layoutY="87.0" text="Название">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="139.0" text="Год">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="191.0" text="Пробег">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="240.0" prefHeight="18.0" prefWidth="81.0" text="Вид топлива" wrapText="true">
+         <font>
+            <Font name="Century" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="299.0" layoutY="87.0" text="Расход топлива">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="139.0" text="Коробка передач">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="191.0" text="Цена">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="152.0" layoutY="310.0" mnemonicParsing="false" onAction="#onUpdateButtonClick" style="-fx-background-color: faa76c;" text="Изменить" />
+      <Label layoutX="140.0" layoutY="14.0" text="Изменение записи модели">
+         <font>
+            <Font name="Century" size="25.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.45571955719557194" centerY="0.4810725552050473" focusDistance="-0.152671697485538" radius="0.7824427189717766">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5526315569877625" green="0.25925925374031067" blue="0.25925925374031067" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.04385964944958687" green="0.004602555651217699" blue="0.004602555651217699" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

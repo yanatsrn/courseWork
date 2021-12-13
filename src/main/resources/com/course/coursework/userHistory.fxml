@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.course.coursework.controller.UserHistoryController">
+   <children>
+      <ImageView fitHeight="472.0" fitWidth="600.0" layoutY="-50.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../photos/consult.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="192.0" layoutY="14.0" text="История покупок">
+         <font>
+            <Font name="Century" size="26.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="199.0" layoutY="85.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="modelName" prefWidth="75.0" text="C1" />
+          <TableColumn fx:id="price" prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
